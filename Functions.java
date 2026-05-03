@@ -36,8 +36,8 @@ public class IsEvenFunctions {
     for (int i = Integer.MAX_VALUE; i > -1; i--) {
       isEven = !isEven;
       if (isEven) {
-        increment++;
         even[increment] = i;
+        increment++;
       }
     }
     
