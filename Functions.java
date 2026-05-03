@@ -5,7 +5,7 @@ public class IsEvenFunctions {
     return Integer.toBinaryString(number).substring(Integer.toBinaryString(number).length() - 1, Integer.toBinaryString(number).length()).equalsIgnoreCase("0");
   }
   
-  private boolean isEvenRecursion(int number) {
+  public boolean isEvenRecursion(int number) {
     if (number > 1) {
       return !isEvenRecursion(number - 1);
     } else if (number < 0) {
@@ -15,7 +15,7 @@ public class IsEvenFunctions {
     }
   }
   
-  private boolean isEvenFor(int number) {
+  public boolean isEvenFor(int number) {
     boolean isEven = false;
     for (int i = Integer.MAX_VALUE; i > number; i--) {
       isEven = !isEven;
