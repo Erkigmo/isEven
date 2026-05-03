@@ -42,7 +42,7 @@ public class IsEvenFunctions {
     }
     
     for (int num : even) {
-      if (Math.abs(num) == number) {
+      if (num == Math.abs(number)) {
         return true;
       }
     }
