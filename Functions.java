@@ -27,12 +27,13 @@ public class IsEvenFunctions {
     return String.valueOf((double) number / 2).contains(".0");
   }
 
+  // You will need to get around vm limitations if you do use this method
   public boolean isEvenLUT(int number) {
     int[] even = new int[Integer.MAX_VALUE];
     boolean isEven = true;
 
     int increment = 0;
-    for (int i = Integer.MAX_VALUE; i > 0; i--) {
+    for (int i = Integer.MAX_VALUE; i > -1; i--) {
       isEven = !isEven;
       if (isEven) {
         increment++;
