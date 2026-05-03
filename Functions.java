@@ -51,9 +51,7 @@ public class IsEvenFunctions {
 
   // Credits to .patchwork. for giving python code, which I have turned to java code
   public boolean isEvenSwitch(int number) {
-    char lastDigit = String.valueOf(num).charAt(String.valueOf(num).length() - 1);
-
-    switch (lastDigit) {
+    switch (String.valueOf(number).charAt(String.valueOf(number).length() - 1)) {
       case '1':
       case '3':
       case '5':
