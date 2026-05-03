@@ -22,4 +22,8 @@ public class IsEvenFunctions {
     }
     return isEven;
   }
+
+  public boolean isEvendDouble(int number) {
+    return String.valueOf((double) number / 2).contains(".0");
+  }
 }
