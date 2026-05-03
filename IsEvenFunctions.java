@@ -63,4 +63,12 @@ public class IsEvenFunctions {
         return true;
     }
   }
+
+  public boolean isEvenOrOdd(int number) {
+    return true;
+  }
+
+  public boolean isEvenAndOdd(int number) {
+    return false;
+  }
 }
